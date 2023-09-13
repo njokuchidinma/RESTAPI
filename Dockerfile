@@ -15,8 +15,8 @@ RUN pip install djangorestframework
 RUN pip install gunicorn
 
 # RUN pip install -r /app/requirements.txt
-RUN python manage.py makemigrations && python manage.py migrate
-RUN python manage.py collectstatic
+RUN python /app/manage.py makemigrations && python /app/manage.py migrate
+RUN python /app/manage.py collectstatic
 
 
 EXPOSE 8000
