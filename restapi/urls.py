@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import PersonView
+from .views import CreatePersonView ,PersonView, NameView
 
 
 urlpatterns = [
-    path('user_id/', PersonView.as_view()),
-    path('user_id/<int:id>', PersonView.as_view()),
+    path('',CreatePersonView.as_view()),
+    path('<int:id>', PersonView.as_view()),
+    path('<str:nameid>', NameView.as_view()),
 ]

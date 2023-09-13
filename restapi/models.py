@@ -7,6 +7,8 @@ def validate_text(text):
     # if not re.match(text, str):
     #     raise ValidationError('Field should only contain letters.')
     print("validation", text)
+    print("a: ", type(text))
+    print("b: ", type("str"))
     if type(text) != type("str"):
         raise ValidationError("fields must be a string")
     print (type(text))

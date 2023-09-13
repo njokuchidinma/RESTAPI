@@ -10,9 +10,3 @@ class PersonSerializer(serializers.ModelSerializer):
     class Meta:
         model = Person
         fields = ('__all__')
-
-
-# curl -X POST -H "Content-Type: application/json" http://127.0.0.1:8000/api/user_id/ -d '{"name":"John","age":30,"place_of_birth":"London"}'
-# curl -X GET http://127.0.0.1:8000/api/user_id/
-# curl -X PUT -H "Content-Type: application/json" http://127.0.0.1:8000/api/user_id/ -d '{"name":"Updated Name","age":35,"place_of_birth":"New York"}'
-# curl -X DELETE http://127.0.0.1:8000/api/user_id/
