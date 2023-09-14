@@ -58,7 +58,7 @@ Table of Contents:
                 example of this in use:
                 curl -X POST -H "Content-Type: application/json" http://localhost/api/user_id/ -d '{"name":"Peter","age":43,"place_of_birth":"LA"}'
             GET:
-                curl -X GET http://localhost/api/user_id/
+                curl -X GET http://localhost/api/
             
             PUT:
                 curl -X PUT -H "Content-Type: application/json" http://localhost/api/user_id/ -d '{...data...}' 
@@ -71,7 +71,7 @@ Table of Contents:
         ie using postman:
             POST:
                 select POST:
-                then put your endpoint:  http://localhost/api/user_id/
+                then put your endpoint:  http://localhost/api/
                 select your format; ie Json;
                 finally put your information;
                 {
@@ -99,7 +99,7 @@ Table of Contents:
             
             DELETE:
                 select DELETE:
-                then put your endpoint:  http://localhost/api/user_id/{id}
+                then put your endpoint:  http://localhost/api/user_id/
                 Then hit the SEND button.
         Response:
             POST RESPONSE:

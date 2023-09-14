@@ -94,7 +94,7 @@ Table of Contents
     - http://localhost/api/user_id/
 
     POST /api/user_id/: Create a new person.
-    GET /api/user_id/: Retrieve a list of all persons or filter by name.
+    GET /api/: Retrieve a list of all persons or filter by name.
     GET /api/user_id/{id}/: Retrieve information about a specific person.
     PATCH /api/user_id/{id}/: Update information about a specific person.
     DELETE /api/user_id/{id}/: Delete a specific person.
