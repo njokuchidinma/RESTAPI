@@ -56,14 +56,14 @@ Table of Contents:
             POST:
                 curl -X POST -H "Content-Type: application/json" http://localhost/api/user_id/ -d '{...data...}'
                 example of this in use:
-                curl -X POST -H "Content-Type: application/json" http://localhost/api/user_id/ -d '{"name":"Peter","age":43,"place_of_birth":"LA"}'
+                curl -X POST -H "Content-Type: application/json" http://localhost/api/user_id/ -d '{"name":"Peter","age":"43","place_of_birth":"LA"}'
             GET:
                 curl -X GET http://localhost/api/
             
             PUT:
                 curl -X PUT -H "Content-Type: application/json" http://localhost/api/user_id/ -d '{...data...}' 
                 example of this in use:
-                curl -X PUT -H "Content-Type: application/json" http://localhost/api/user_id/ -d '{"name":"Updated Name","age":35,"place_of_birth":"New York"}'
+                curl -X PUT -H "Content-Type: application/json" http://localhost/api/user_id/ -d '{"name":"Updated Name","age":"35","place_of_birth":"New York"}'
             
             DELETE:
                 curl -X DELETE http://localhost/api/user_id/
@@ -76,7 +76,7 @@ Table of Contents:
                 finally put your information;
                 {
                     "name":"Peter",
-                    "age":43,
+                    "age":"43",
                     "place_of_birth":"LA"
                 }
                 Then hit the SEND button.
@@ -92,7 +92,7 @@ Table of Contents:
                 finally put your information;
                 {
                     "name":"Updated name",
-                    "age":43,
+                    "age":"43",
                     "place_of_birth":"LA"
                 }
                 Then hit the SEND button.
@@ -109,7 +109,7 @@ Table of Contents:
                     "status": "success",
                     "data": {
                         "name":"Peter",
-                        "age":43,
+                        "age":"43",
                         "place_of_birth":"LA"
                     }
                 }
